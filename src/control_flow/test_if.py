@@ -28,8 +28,10 @@ def test_if_statement():
             conclusion += ' and even'
         else:
             conclusion += ' and odd'
+        if number % 5 == 0:
+            conclusion += ' and divisible by five'
 
-    assert conclusion == 'Number bigger than or equal to one and odd'
+    assert conclusion == 'Number bigger than or equal to one and odd and divisible by five'
 
 
 def test_if_multiple_elif_branches():
