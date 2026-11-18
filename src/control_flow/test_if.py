@@ -24,8 +24,10 @@ def test_if_statement():
         conclusion = 'Number is greater than zero but less than one'
     else:
         conclusion = 'Number bigger than or equal to one'
+        if number % 5 == 0:
+            conclusion += ' and divisible by five'
 
-    assert conclusion == 'Number bigger than or equal to one'
+    assert conclusion == 'Number bigger than or equal to one and divisible by five'
 
 
 def test_if_multiple_elif_branches():
