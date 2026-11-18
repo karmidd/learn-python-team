@@ -61,10 +61,11 @@ def test_list_type():
     letters[:] = []
     assert letters == []
 
-    # The built-in functions len() and min() also apply to lists
+    # The built-in functions len(), min() and max() also apply to lists
     letters = ['a', 'b', 'c', 'd']
     assert len(letters) == 4
     assert min(letters) == 'a'
+    assert max(letters) == 'd'
 
     # It is possible to nest lists (create lists containing other lists),
     # for example:
