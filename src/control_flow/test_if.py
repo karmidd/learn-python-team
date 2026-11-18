@@ -24,6 +24,10 @@ def test_if_statement():
         conclusion = 'Number is greater than zero but less than one'
     else:
         conclusion = 'Number bigger than or equal to one'
+        if number % 2 == 0:
+            conclusion += ' and even'
+        else:
+            conclusion += ' and odd'
         if number % 5 == 0:
             conclusion += ' and divisible by five'
 
